@@ -37,4 +37,4 @@ Are sensitivity and specificity good?
 
 Does R² align with these metrics? 
   
-  While R² is moderate, it is reasonable for this type of application. The logistic regression model's performance metrics (sensitivity, specificity, and AUC) complement the R² and indicate that the model is suitable for        prediction, even though there is room for improvement in explanatory power.
+  While R² is moderate, it is reasonable for this type of application. The logistic regression model's performance metrics (sensitivity, specificity, and AUC) complement the R² and indicate that the model is suitable for        prediction.
