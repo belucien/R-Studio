@@ -35,8 +35,9 @@ Are sensitivity and specificity good?
   
   Yes, especially given the high AUC (0.8833). The model is well-balanced in distinguishing between passing and failing candidates.
 
-
-# IDs have been anonymized to protect student confidentiality.
 Does R² align with these metrics? 
   
   While R² is moderate, it is reasonable for this type of application. The logistic regression model's performance metrics (sensitivity, specificity, and AUC) complement the R² and indicate that the model is suitable for        prediction.
+
+
+# IDs have been anonymized to protect student confidentiality.
