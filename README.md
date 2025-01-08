@@ -1,5 +1,5 @@
 # R-Studio NAVLE Predictive Model
-# A predictive model based on Vet Med student GPA and ACT scores going into taking their "board exam".
+# A predictive model based on veterinary medicine students' GPA and ACT scores designed to predict their performance and outcome on the board exam.
 
 NAVLE Predictive Model - Use Case
 
