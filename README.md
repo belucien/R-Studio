@@ -26,6 +26,7 @@ P=
 1+exp(−(Intercept+Coefficients × Variables))
 1
 ​
+
 Example variables include SEM4SPRINGGPA, SEM5FALLGPA, and core subject cumulative scores. For implementation, gather Semester 5 and 6 GPAs (adjusted for repeated courses), plug variables into the formula, and use coefficients derived from the regression output. This model provides actionable insights for identifying at-risk students and tailoring academic support.
 
 Conclusion:
