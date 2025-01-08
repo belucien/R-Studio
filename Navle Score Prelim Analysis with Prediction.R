@@ -6,7 +6,7 @@ library(pROC)
 library("randomForest")
 library(dplyr)
 set.seed(42)
-setwd("C:/Users/brandonlucien/OneDrive - Western University of Health Sciences/Desktop/Admission data")
+setwd("C:/Users/blucien/OneDrive - Western University of Health Sciences/Desktop/Admission data")
 dat = read.csv("Navle_Data.csv", head = T, stringsAsFactors = F)
 
 dat1 = read.csv("Test_DataDVM2022.csv" , head = T, stringsAsFactors = F)
