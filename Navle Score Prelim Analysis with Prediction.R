@@ -6,7 +6,7 @@ library(pROC)
 library("randomForest")
 library(dplyr)
 set.seed(42)
-setwd("C:/Users/huiyang/OneDrive - Western University of Health Sciences/Desktop/Admission data")
+setwd("C:/Users/brandonlucien/OneDrive - Western University of Health Sciences/Desktop/Admission data")
 dat = read.csv("Navle_Data.csv", head = T, stringsAsFactors = F)
 
 dat1 = read.csv("Test_DataDVM2022.csv" , head = T, stringsAsFactors = F)
@@ -190,11 +190,11 @@ newPredict_pre_2023=predict(model1A1,newdata = dat2, interval = "prediction", ty
 View(newPredict)
 View(newPredict_pre)
 
-#DVM2022
-write.csv(cbind.data.frame(dat1, Predicted_NavleScore = newPredict_pre), file = "TestData_DVM2022 with Navle Predicted.csv", row.names = F)
-#DVM 2023
-write.csv(cbind.data.frame(dat2, Prob_of_passing_NAVLE = newPredict_pre_2023), file = "TestData_DVM2023 with Navle Predicted.csv", row.names = F)
-write.xlsx2(cbind.data.frame(dat1, Predicted_NavleScore = newPredict_con), file = "TestData_DVM2021 with Navle Predicted.xlsx", sheetName = "Confidence_interval", append = TRUE)
+#DVM2023
+write.csv(cbind.data.frame(dat1, Predicted_NavleScore = newPredict_pre), file = "TestData_DVM2023 with Navle Predicted.csv", row.names = F)
+#DVM 2024
+write.csv(cbind.data.frame(dat2, Prob_of_passing_NAVLE = newPredict_pre_2024), file = "TestData_DVM2024 with Navle Predicted.csv", row.names = F)
+write.xlsx2(cbind.data.frame(dat1, Predicted_NavleScore = newPredict_con), file = "TestData_DVM2023 with Navle Predicted.xlsx", sheetName = "Confidence_interval", append = TRUE)
 # Adding new sheet 
-write.xlsx2(cbind.data.frame(dat1, Predicted_NavleScore = newPredict_pre), file = "TestData_DVM2021 with Navle Predicted.xlsx", sheetName = "Prediction_interval", append = TRUE)
+write.xlsx2(cbind.data.frame(dat1, Predicted_NavleScore = newPredict_pre), file = "TestData_DVM2024 with Navle Predicted.xlsx", sheetName = "Prediction_interval", append = TRUE)
 plot(newPredict_pre_2023)
