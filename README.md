@@ -29,6 +29,8 @@ P=
 
 Example variables include SEM4SPRINGGPA, SEM5FALLGPA, and core subject cumulative scores. For implementation, gather Semester 5 and 6 GPAs (adjusted for repeated courses), plug variables into the formula, and use coefficients derived from the regression output. This model provides actionable insights for identifying at-risk students and tailoring academic support.
 
+A Final Score of >= 525 is passing while <= 524 is considered fail
+
 Conclusion:
 
 Are sensitivity and specificity good? 
